@@ -2,6 +2,7 @@
 * {
    padding: 0;
    margin: 0;
+   box-sizing: border-box;
 }
 
 /* Reset styles end */
@@ -17,6 +18,10 @@ body {
 .container {
    width: 1272px;
    margin: 0 auto;
+}
+
+a {
+   text-decoration: none;
 }
 
 p {
@@ -37,8 +42,11 @@ h2 {
 /* Defaut styles end */
 
 .product {
-   color: #fff;
    background-color: #445161;
+}
+
+.product-box {
+   color: #fff;
    padding: 25px 50px 19px 50px;
    display: flex;
    justify-content: space-between;
@@ -73,7 +81,7 @@ h2 {
    background-color: #fff;
 }
 
-.about {
+.about-box {
    padding: 45px 50px 50px 50px;
    display: flex;
    justify-content: space-between;
@@ -96,7 +104,10 @@ h2 {
 
 .pluses__section {
    background-color: #F5F5F5;
-   padding: 25px 50px 48px 50px;
+}
+
+.pluses-box {
+   padding: 25px 50px 15px 50px;
 }
 
 .pluses__head {
@@ -107,16 +118,13 @@ h2 {
 .pluses {
    display: flex;
    justify-content: space-between;
+   flex-wrap: wrap;
 }
 
 .pluses-item {
    display: flex;
-   max-width: 568px;
+   width: 575px;
    margin-bottom: 33px;
-}
-
-.pluses-item__bottom {
-   margin-bottom: 0;
 }
 
 .pluses-item__plus {
@@ -139,8 +147,8 @@ h2 {
    line-height: 22px;
 }
 
-.screenshots {
-   padding: 25px 50px 50px 50px;
+.screenshots-box {
+   padding: 25px 50px 23px 50px;
 }
 
 .screenshots-head {
@@ -149,16 +157,15 @@ h2 {
 }
 
 .screenshots-blocks {
-   height: 333px;
    display: flex;
    flex-wrap: wrap;
    justify-content: space-between;
-   align-content: space-between;
 }
 
 .screenshots-item {
    display: flex;
-   max-width: 575px;
+   width: 575px;
+   margin-bottom: 27px;
 }
 
 .screenshots-item__image {
@@ -182,6 +189,9 @@ h2 {
 
 .reviews {
    background-color: #f5f5f5;
+}
+
+.reviews-box {
    padding: 25px 50px 42px 50px;
 }
 
@@ -193,12 +203,13 @@ h2 {
 .reviews-blocks {
    display: flex;
    flex-wrap: wrap;
-   justify-content: space-around;
+   justify-content: space-between;
 }
 
 .reviews-item {
    display: flex;
    margin-bottom: 20px;
+   width: 575px;
 }
 
 .reviews-item__image {
@@ -210,12 +221,25 @@ h2 {
 }
 
 .reviews-item__desc {
-   width: 462px;
+   width: 483px;
    padding: 16px 10px 5px 15px;
    background-color: #EBEBEB;
    border-radius: 5px;
-   margin-left: 15px;
+   margin-left: 16px;
    font-family: 'Roboto', sans-serif;
+   position: relative;
+   z-index: 0;
+}
+
+.reviews-item__triangle {
+   position: absolute;
+   background-color: #EBEBEB;
+   width: 30px;
+   height: 24px;
+   left: -12px;
+   top: 40px;
+   transform: rotate(-45deg);
+   z-index: -1;
 }
 
 .reviews-item__p {
@@ -240,8 +264,12 @@ h2 {
    margin-top: 26px;
    display: flex;
    justify-content: space-around;
-   align-items: end;
-   padding: 0 140px 50px;
+   padding: 0 145px 50px;
+}
+
+.buy-pricing-box {
+   display: flex;
+   flex-direction: column-reverse;
 }
 
 .buy-pricing__item {
