@@ -75,12 +75,14 @@ h2 {
    display: inline-block;
 }
 
-.product-img {
+/* .product-img {
    width: 472px;
    height: 217px;
    background-color: #fff;
+} */
+.product-box video {
+   height: 217px;
 }
-
 .about-box {
    padding: 45px 50px 50px 50px;
    display: flex;
