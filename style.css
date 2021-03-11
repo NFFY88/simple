@@ -83,6 +83,7 @@ h2 {
 .product-box video {
    height: 217px;
 }
+
 .about-box {
    padding: 45px 50px 50px 50px;
    display: flex;
@@ -173,8 +174,35 @@ h2 {
 .screenshots-item__image {
    width: 200px;
    height: 150px;
-   background-color: #445161;
+   /* background-color: #445161; */
    flex-shrink: 0;
+}
+
+.screenshots-item__image1 {
+   background-image: url(img/front.jpg);
+   background-size: cover;
+}
+
+.screenshots-item__image2 {
+   background-image: url(img/u-tebya-lapki_171368823_orig_.jpg);
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-position-x: 20%;
+}
+
+.screenshots-item__image3 {
+   background-image: url(img/back.jpg);
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-position-y: center;
+}
+
+.screenshots-item__image4 {
+   background-image: url(img/DnhIIiTX0AA5O-H.jpg);
+   background-size: 90%;
+   background-position-y: -34px;
+   background-repeat: no-repeat;
+   background-position-x: center;
 }
 
 .screenshots-item__desc {
@@ -428,6 +456,19 @@ h2 {
 
 .contacts-social-item {
    margin-right: 6px;
+   width: 46px;
+   height: 46px;
+   background-color: #fff;
+   border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+}
+
+.fab {
+   color: #445162;
+   font-size: 24px;
 }
 
 .footer {
